@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FriendlyErrorPlugin = require('friendly-errors-webpack-plugin');
 const notifier = require('node-notifier');
 const config = require('./config');
-const baseWebpackConfig = require('./webpack.base.conf');
+const baseWebpackConfig = require('./webpack.config.base');
 
 const HOST = config.dev.host;
 const PORT = config.dev.port;
