@@ -35,7 +35,7 @@ function Countdown(props) {
 
 	Object.keys(timeLeft).forEach((interval) => {
 		timerComponents.push(
-			<span>
+			<span key={interval}>
 				{timeLeft[interval]} {interval}{' '}
 			</span>
 		);
