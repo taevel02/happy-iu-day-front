@@ -1,6 +1,36 @@
+import styled from '@emotion/styled';
 import React, { useEffect, useState } from 'react';
 
 import SpecialStage from './SpecialStage';
+
+const Content = styled.div`
+	display: flex;
+	justify-content: center;
+	margin: 1rem;
+`;
+
+const Wrapper = styled.div`
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	font-family: 'Inter', sans-serif;
+
+	:not(:last-child) {
+		margin-right: 2.4rem;
+	}
+`;
+
+const Number = styled.span`
+	color: #000;
+	font-size: 100px;
+	font-weight: 700;
+`;
+
+const Text = styled.span`
+	color: #000;
+	font-size: 18px;
+	font-weight: 300;
+`;
 
 function Countdown(props) {
 	const calculateTimeLeft = () => {
@@ -35,13 +65,22 @@ function Countdown(props) {
 
 	Object.keys(timeLeft).forEach((interval) => {
 		timerComponents.push(
-			<span key={interval}>
-				{timeLeft[interval]} {interval}{' '}
-			</span>
+			<Wrapper key={interval}>
+				<Number>{timeLeft[interval]}</Number>
+				<Text>{interval}</Text>
+			</Wrapper>
 		);
 	});
 
-	return <>{timerComponents.length ? timerComponents : <SpecialStage />}</>;
+	return (
+		<>
+			{timerComponents.length ? (
+				<Content>{timerComponents}</Content>
+			) : (
+				<SpecialStage />
+			)}
+		</>
+	);
 }
 
 export default Countdown;
