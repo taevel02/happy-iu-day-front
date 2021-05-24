@@ -1,4 +1,5 @@
 import './scss/reset.scss';
+import './scss/global.scss';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
