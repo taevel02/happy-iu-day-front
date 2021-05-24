@@ -8,10 +8,10 @@ const Content = styled.div`
 	overflow: hidden;
 `;
 
-const Wrraper = styled.div`
+const Wrapper = styled.div`
 	position: relative;
 	left: 50%;
-	top: 47%;
+	top: 43%;
 	transform: translateX(-50%) translateY(-50%);
 	text-align: center;
 `;
@@ -23,13 +23,13 @@ function App() {
 
 	return (
 		<Content>
-			<Wrraper>
+			<Wrapper>
 				{month <= 5 && day <= 16 ? (
 					<Countdown date={`05/16/${year}`} />
 				) : (
 					<Countdown date={`05/16/${year + 1}`} />
 				)}
-			</Wrraper>
+			</Wrapper>
 		</Content>
 	);
 }
