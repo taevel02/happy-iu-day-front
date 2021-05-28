@@ -9,5 +9,9 @@
 		],
 		"@babel/preset-react"
 	],
-	"plugins": ["@babel/plugin-syntax-dynamic-import", "@emotion"]
+	"plugins": [
+		"@babel/plugin-proposal-class-properties",
+		"@babel/plugin-syntax-dynamic-import",
+		"@emotion"
+	]
 }

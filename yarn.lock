@@ -1531,6 +1531,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/canvas-confetti@npm:1.4.0":
+  version: 1.4.0
+  resolution: "@types/canvas-confetti@npm:1.4.0"
+  checksum: 031302910579dceda5ab2225eab51af1f5bbcb3443c5356a14bfa4e63b739a99e23a4c3aa45a9a539b5edce75aaf9a448d9a6d31bcbc4d3f8af1143db17f65cc
+  languageName: node
+  linkType: hard
+
 "@types/emscripten@npm:^1.38.0":
   version: 1.39.4
   resolution: "@types/emscripten@npm:1.39.4"
@@ -2877,6 +2884,13 @@ __metadata:
   version: 1.0.30001218
   resolution: "caniuse-lite@npm:1.0.30001218"
   checksum: ba15b4757ce19422ec444da2a4783e809286666fffabeb593f4d66840849028365a5c63475383332358aff20ef38693db65685710f5a138922bcf9f6bff9c6d7
+  languageName: node
+  linkType: hard
+
+"canvas-confetti@npm:1.4.0":
+  version: 1.4.0
+  resolution: "canvas-confetti@npm:1.4.0"
+  checksum: 12552a8d7665a1879755ea666c72927bf881724ff0f1800894226afabdd5482aa3c8eae677cb00cf9e8749504b7ae65822de05d30144d23a4be37275ff66e8a0
   languageName: node
   linkType: hard
 
@@ -7982,6 +7996,18 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"react-canvas-confetti@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "react-canvas-confetti@npm:1.2.0"
+  dependencies:
+    "@types/canvas-confetti": 1.4.0
+    canvas-confetti: 1.4.0
+  peerDependencies:
+    react: "*"
+  checksum: 6f96ead4bee37b64a93fb984f97d3f321b6d98c42ddb14f614e98ce78d83715d5b123f9b4eea866c94a7d67394482efba7f90124d17af3e12aac8fff5500b2b4
+  languageName: node
+  linkType: hard
+
 "react-dom@npm:^17.0.2":
   version: 17.0.2
   resolution: "react-dom@npm:17.0.2"
@@ -9037,6 +9063,7 @@ resolve@^2.0.0-next.3:
   resolution: "special-day-countdown@workspace:."
   dependencies:
     "@babel/core": ^7.13.16
+    "@babel/plugin-proposal-class-properties": ^7.13.0
     "@babel/plugin-syntax-dynamic-import": ^7.8.3
     "@babel/polyfill": ^7.12.1
     "@babel/preset-env": ^7.13.15
@@ -9068,6 +9095,7 @@ resolve@^2.0.0-next.3:
     node-sass: ^5.0.0
     prettier: ^2.2.1
     react: ^17.0.2
+    react-canvas-confetti: ^1.2.0
     react-dom: ^17.0.2
     sass-loader: ^11.0.1
     style-loader: ^2.0.0
